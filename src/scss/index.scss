@@ -1,0 +1,26 @@
+@use 'variables' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fontFamily;
+    color: $mainColor;
+}
+
+a {
+    text-decoration: underline;
+
+    &:hover {
+        text-shadow: 2px 2px 1px $mainColor;
+    };
+
+    &:active {
+        text-shadow: -2px -2px 1px $mainColor;
+    }
+}
+
+body {
+    height: 100vh;
+    background-color: $badyBGcolor;
+}
